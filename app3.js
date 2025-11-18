@@ -10,7 +10,7 @@ const ai = new GoogleGenAI({
 });
 async function main() {
 
-    const pdfBuffer = await fetch("https://advancedev.netlify.app//A17_FlightPlan.pdf")
+    const pdfBuffer = await fetch("https://www.nasa.gov/wp-content/uploads/static/history/alsj/a17/A17_FlightPlan.pdf")
         .then((response) => response.arrayBuffer());
 
     const fileBlob = new Blob([pdfBuffer], { type: 'application/pdf' });

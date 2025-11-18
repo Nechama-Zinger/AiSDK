@@ -9,7 +9,7 @@ const ai = new GoogleGenAI({
 
 
 async function main() {
-    const pdfResp = await fetch('https://advancedev.netlify.app//343019_3_art_0_py4t4l_convrt.pdf?&~nfopt(fileDistorted=2141478112784232)')
+    const pdfResp = await fetch('https://advancedev.netlify.app//343019_3_art_0_py4t4l_convrt.pdf')
         .then((response) => response.arrayBuffer());
 
     const contents = [
